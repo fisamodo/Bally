@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Bally.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{AE1DB438-7FA4-4AC1-A429-E6C8229FC027}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Bally.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\BallyEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{31E06F99-2D30-42AA-9236-737951287048}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\Android">
+      <UniqueIdentifier>{A240CE75-9C1E-4AFD-95D6-80AAEBE17C4F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Android\AndroidEngine.ini">
+      <Filter>Config\Android</Filter>
+    </None>
+    <Filter Include="Config\IOS">
+      <UniqueIdentifier>{9948BFA4-ADD0-4D61-B08F-F34DDC2897F6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\IOS\IOSEngine.ini">
+      <Filter>Config\IOS</Filter>
+    </None>
+    <Filter Include="Config\Linux">
+      <UniqueIdentifier>{52D6318F-5D37-46CD-87E9-A7368151B393}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Linux\LinuxEngine.ini">
+      <Filter>Config\Linux</Filter>
+    </None>
+    <Filter Include="Config\Mac">
+      <UniqueIdentifier>{CFF2666A-7728-45BB-84C2-A6E1A085DB85}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Mac\MacEngine.ini">
+      <Filter>Config\Mac</Filter>
+    </None>
+    <Filter Include="Config\PS4">
+      <UniqueIdentifier>{81284535-777A-4101-90ED-08D6F6DF876D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\PS4\PS4Engine.ini">
+      <Filter>Config\PS4</Filter>
+    </None>
+    <Filter Include="Config\Switch">
+      <UniqueIdentifier>{A9CF9648-AD21-4E35-B2F1-E62604ECCFA7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Switch\SwitchEngine.ini">
+      <Filter>Config\Switch</Filter>
+    </None>
+    <Filter Include="Config\Windows">
+      <UniqueIdentifier>{7B737994-D048-4427-BCB1-51E9E94E4126}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Windows\WindowsEngine.ini">
+      <Filter>Config\Windows</Filter>
+    </None>
+    <Filter Include="Config\XboxOne">
+      <UniqueIdentifier>{8EA923F7-32DF-46AC-944C-0543486EAFE7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\XboxOne\XboxOneEngine.ini">
+      <Filter>Config\XboxOne</Filter>
+    </None>
+    <Filter Include="Source\Bally">
+      <UniqueIdentifier>{61931889-B3D4-40DA-B77A-6B363AE6F59E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Bally\Bally.Build.cs">
+      <Filter>Source\Bally</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Bally\Bally.cpp">
+      <Filter>Source\Bally</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bally\Bally.h">
+      <Filter>Source\Bally</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Bally\BallyGameModeBase.cpp">
+      <Filter>Source\Bally</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Bally\BallyGameModeBase.h">
+      <Filter>Source\Bally</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
