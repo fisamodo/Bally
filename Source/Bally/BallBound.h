@@ -6,6 +6,10 @@
 #include "GameFramework/Actor.h"
 #include "BallBound.generated.h"
 
+class UBoxComponent;
+class APaddle_Player_Controller;
+
+
 UCLASS()
 class BALLY_API ABallBound : public AActor
 {
@@ -18,6 +22,15 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+		UBoxComponent* Box_Collision;
+	UFUNCTION()
+		void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor,
+			class UPrimitiveComponent* OtherComp, int32 OtherBodyIndexType, bool bFromSweep,
+			const FHitResult& SweepResult);
+
+	APaddle_Player_Controller* PlayerController_REF;
 
 public:	
 	// Called every frame

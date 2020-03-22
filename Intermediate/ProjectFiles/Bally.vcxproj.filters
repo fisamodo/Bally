@@ -103,6 +103,12 @@
     <ClInclude Include="..\..\Source\Bally\Brick.h">
       <Filter>Source\Bally</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Bally\BallBound.h">
+      <Filter>Source\Bally</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Bally\BallyGameStateBase.h">
+      <Filter>Source\Bally</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Bally\Paddle.cpp">
@@ -115,6 +121,12 @@
       <Filter>Source\Bally</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Bally\Brick.cpp">
+      <Filter>Source\Bally</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bally\BallBound.cpp">
+      <Filter>Source\Bally</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bally\BallyGameStateBase.cpp">
       <Filter>Source\Bally</Filter>
     </ClCompile>
   </ItemGroup>
