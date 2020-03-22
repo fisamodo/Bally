@@ -6,7 +6,7 @@
 #include "GameFramework/PlayerController.h"
 #include "Paddle_Player_Controller.generated.h"
 
-//class ABall
+class ABall;
 /**
  * 
  */
@@ -25,5 +25,16 @@ protected:
 
 	void MoveHorizontal(float AxisValue);
 
-	//bal
+	void Launch();
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<ABall> BallObject;
+
+	ABall* MyBall;
+	FVector SpawnLocation = FVector(10.0f, 0.0f, 40.0f);
+	FRotator SpawnRotation = FRotator(0.0f, 0.0f, 0.0f);
+	FActorSpawnParameters SpawnInfo;
+
+public :
+	void SpawnNewBall();
 };

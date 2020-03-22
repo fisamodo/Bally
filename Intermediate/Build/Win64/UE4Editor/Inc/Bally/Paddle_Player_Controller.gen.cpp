@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodePaddle_Player_Controller() {}
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 	UPackage* Z_Construct_UPackage__Script_Bally();
 	BALLY_API UFunction* Z_Construct_UFunction_APaddle_Player_Controller_SetupInputComponent();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	BALLY_API UClass* Z_Construct_UClass_ABall_NoRegister();
 // End Cross Module References
 	void APaddle_Player_Controller::StaticRegisterNativesAPaddle_Player_Controller()
 	{
@@ -60,6 +62,11 @@ void EmptyLinkFunctionForGeneratedCodePaddle_Player_Controller() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BallObject_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_BallObject;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -78,6 +85,16 @@ void EmptyLinkFunctionForGeneratedCodePaddle_Player_Controller() {}
 		{ "ModuleRelativePath", "Paddle_Player_Controller.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APaddle_Player_Controller_Statics::NewProp_BallObject_MetaData[] = {
+		{ "Category", "Paddle_Player_Controller" },
+		{ "ModuleRelativePath", "Paddle_Player_Controller.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APaddle_Player_Controller_Statics::NewProp_BallObject = { "BallObject", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APaddle_Player_Controller, BallObject), Z_Construct_UClass_ABall_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APaddle_Player_Controller_Statics::NewProp_BallObject_MetaData, ARRAY_COUNT(Z_Construct_UClass_APaddle_Player_Controller_Statics::NewProp_BallObject_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APaddle_Player_Controller_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APaddle_Player_Controller_Statics::NewProp_BallObject,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APaddle_Player_Controller_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APaddle_Player_Controller>::IsAbstract,
 	};
@@ -87,11 +104,11 @@ void EmptyLinkFunctionForGeneratedCodePaddle_Player_Controller() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_APaddle_Player_Controller_Statics::PropPointers,
 		nullptr,
 		ARRAY_COUNT(DependentSingletons),
 		ARRAY_COUNT(FuncInfo),
-		0,
+		ARRAY_COUNT(Z_Construct_UClass_APaddle_Player_Controller_Statics::PropPointers),
 		0,
 		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_APaddle_Player_Controller_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_APaddle_Player_Controller_Statics::Class_MetaDataParams))
@@ -105,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodePaddle_Player_Controller() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APaddle_Player_Controller, 3988997023);
+	IMPLEMENT_CLASS(APaddle_Player_Controller, 466139943);
 	template<> BALLY_API UClass* StaticClass<APaddle_Player_Controller>()
 	{
 		return APaddle_Player_Controller::StaticClass();

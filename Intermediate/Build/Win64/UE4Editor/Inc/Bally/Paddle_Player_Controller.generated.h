@@ -77,7 +77,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APaddle_Player_Controller); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APaddle_Player_Controller)
 
 
-#define Bally_Source_Bally_Paddle_Player_Controller_h_16_PRIVATE_PROPERTY_OFFSET
+#define Bally_Source_Bally_Paddle_Player_Controller_h_16_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__BallObject() { return STRUCT_OFFSET(APaddle_Player_Controller, BallObject); }
+
+
 #define Bally_Source_Bally_Paddle_Player_Controller_h_13_PROLOG
 #define Bally_Source_Bally_Paddle_Player_Controller_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
