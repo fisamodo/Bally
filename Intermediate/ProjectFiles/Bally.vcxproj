@@ -365,7 +365,9 @@
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Bally\Paddle.cpp" />
+    <ClCompile Include="..\..\Source\Bally\Paddle_Player_Controller.cpp" />
     <ClInclude Include="..\..\Source\Bally\Paddle.h" />
+    <ClInclude Include="..\..\Source\Bally\Paddle_Player_Controller.h" />
     <None Include="..\..\Bally.uproject" />
     <None Include="..\..\Source\Bally.Target.cs" />
     <None Include="..\..\Source\BallyEditor.Target.cs" />

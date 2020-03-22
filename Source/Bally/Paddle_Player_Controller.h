@@ -6,6 +6,7 @@
 #include "GameFramework/PlayerController.h"
 #include "Paddle_Player_Controller.generated.h"
 
+//class ABall
 /**
  * 
  */
@@ -13,5 +14,16 @@ UCLASS()
 class BALLY_API APaddle_Player_Controller : public APlayerController
 {
 	GENERATED_BODY()
-	
+
+		APaddle_Player_Controller();
+
+	UFUNCTION()
+		virtual void SetupInputComponent() override;
+
+protected:
+	virtual void BeginPlay() override;
+
+	void MoveHorizontal(float AxisValue);
+
+	//bal
 };

@@ -94,9 +94,15 @@
     <ClInclude Include="..\..\Source\Bally\Paddle.h">
       <Filter>Source\Bally</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Bally\Paddle_Player_Controller.h">
+      <Filter>Source\Bally</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Bally\Paddle.cpp">
+      <Filter>Source\Bally</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Bally\Paddle_Player_Controller.cpp">
       <Filter>Source\Bally</Filter>
     </ClCompile>
   </ItemGroup>
