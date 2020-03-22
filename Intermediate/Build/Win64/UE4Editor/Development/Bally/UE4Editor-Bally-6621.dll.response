@@ -68,8 +68,8 @@
 "C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
 "C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
-/OUT:"C:\Users\Filip\Documents\Unreal Projects\Bally\Binaries\Win64\UE4Editor-Bally.dll"
-/IMPLIB:"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\UE4Editor-Bally.suppressed.lib"
-/PDB:"C:\Users\Filip\Documents\Unreal Projects\Bally\Binaries\Win64\UE4Editor-Bally.pdb"
+/OUT:"C:\Users\Filip\Documents\Unreal Projects\Bally\Binaries\Win64\UE4Editor-Bally-6621.dll"
+/IMPLIB:"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\UE4Editor-Bally-6621.suppressed.lib"
+/PDB:"C:\Users\Filip\Documents\Unreal Projects\Bally\Binaries\Win64\UE4Editor-Bally-6621.pdb"
 /ignore:4078
 /INCLUDE:IMPLEMENT_MODULE_Bally

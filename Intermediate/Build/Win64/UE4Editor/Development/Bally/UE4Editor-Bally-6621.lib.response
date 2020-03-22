@@ -3,7 +3,7 @@
 /MACHINE:x64
 /SUBSYSTEM:WINDOWS
 /DEF
-/NAME:"UE4Editor-Bally.dll"
+/NAME:"UE4Editor-Bally-6621.dll"
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\BallyEditor\Development\Engine\SharedPCH.Engine.h.obj"
@@ -14,5 +14,5 @@
 "C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\BallyGameModeBase.gen.cpp.obj"
 "C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\Paddle.gen.cpp.obj"
 "C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\Default.rc2.res"
-/OUT:"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\UE4Editor-Bally.lib"
+/OUT:"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\UE4Editor-Bally-6621.lib"
 /INCLUDE:IMPLEMENT_MODULE_Bally

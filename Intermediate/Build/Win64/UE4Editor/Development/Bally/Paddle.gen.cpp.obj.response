@@ -533,9 +533,9 @@
 /FI"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\BallyEditor\Development\Engine\SharedPCH.Engine.h"
 /Yu"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\BallyEditor\Development\Engine\SharedPCH.Engine.h"
 /Fp"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\BallyEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Inc\Bally\BallyGameModeBase.gen.cpp"
+"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Inc\Bally\Paddle.gen.cpp"
 /FI"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\Definitions.Bally.h"
-/Fo"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\BallyGameModeBase.gen.cpp.obj"
+/Fo"C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Development\Bally\Paddle.gen.cpp.obj"
 /TP
 /GR-
 /W4
