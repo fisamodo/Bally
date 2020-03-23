@@ -15,11 +15,14 @@ void ABallyGameModeBase::OnHit()
 		GS->Points++;
 		if (GS->Points == PointsToWin)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("You won!"));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, FString::Printf(TEXT("You won the game! It took you %f seconds to win the game."), GetWorld()->GetTimeSeconds()));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, FString::Printf(TEXT("Press L ALT to exit")));
+
+
 		}
 		else
 		{
-			UE_LOG(LogTemp, Warning, TEXT("You scored, you have %d points"), GS->Points);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, FString::Printf(TEXT("You scored a point, you now have %d points"), GS->Points));
 		}
 	}
 }
