@@ -30,6 +30,7 @@ protected:
 			class UPrimitiveComponent* OtherComp, int32 OtherBodyIndexType, bool bFromSweep,
 			const FHitResult& SweepResult);
 
+
 	APaddle_Player_Controller* PlayerController_REF;
 
 public:	

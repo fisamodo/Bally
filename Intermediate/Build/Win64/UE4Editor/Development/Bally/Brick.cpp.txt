@@ -7,3 +7,13 @@ C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
 c:\users\filip\documents\unreal projects\bally\source\bally\Ball.h
 C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Inc\Bally\Ball.generated.h
+c:\users\filip\documents\unreal projects\bally\source\bally\BallyGameStateBase.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameStateBase.generated.h
+C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Inc\Bally\BallyGameStateBase.generated.h
+c:\users\filip\documents\unreal projects\bally\source\bally\BallyGameModeBase.h
+C:\Users\Filip\Documents\Unreal Projects\Bally\Intermediate\Build\Win64\UE4Editor\Inc\Bally\BallyGameModeBase.generated.h

@@ -36,6 +36,7 @@ void ABallBound::OnOverlapBegin(UPrimitiveComponent * OverlappedComp, AActor * O
 	UPrimitiveComponent * OtherComp, int32 OtherBodyIndexType, bool bFromSweep, 
 	const FHitResult & SweepResult)
 {
+
 	if (OtherActor->ActorHasTag("Ball")) {
 		OtherActor->Destroy();
 

@@ -31,6 +31,11 @@ void EmptyLinkFunctionForGeneratedCodeBallyGameModeBase() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PointsToWin_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_PointsToWin;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -47,6 +52,16 @@ void EmptyLinkFunctionForGeneratedCodeBallyGameModeBase() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallyGameModeBase_Statics::NewProp_PointsToWin_MetaData[] = {
+		{ "Category", "Game Rules" },
+		{ "ModuleRelativePath", "BallyGameModeBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABallyGameModeBase_Statics::NewProp_PointsToWin = { "PointsToWin", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallyGameModeBase, PointsToWin), METADATA_PARAMS(Z_Construct_UClass_ABallyGameModeBase_Statics::NewProp_PointsToWin_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABallyGameModeBase_Statics::NewProp_PointsToWin_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABallyGameModeBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallyGameModeBase_Statics::NewProp_PointsToWin,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABallyGameModeBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABallyGameModeBase>::IsAbstract,
 	};
@@ -56,11 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeBallyGameModeBase() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ABallyGameModeBase_Statics::PropPointers,
 		nullptr,
 		ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		ARRAY_COUNT(Z_Construct_UClass_ABallyGameModeBase_Statics::PropPointers),
 		0,
 		0x009002A8u,
 		METADATA_PARAMS(Z_Construct_UClass_ABallyGameModeBase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_ABallyGameModeBase_Statics::Class_MetaDataParams))
@@ -74,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeBallyGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABallyGameModeBase, 1477651091);
+	IMPLEMENT_CLASS(ABallyGameModeBase, 867016454);
 	template<> BALLY_API UClass* StaticClass<ABallyGameModeBase>()
 	{
 		return ABallyGameModeBase::StaticClass();

@@ -35,7 +35,7 @@ public: \
 
 #define Bally_Source_Bally_BallyGameModeBase_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ABallyGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ABallyGameModeBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABallyGameModeBase) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABallyGameModeBase); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABallyGameModeBase); \
@@ -47,8 +47,6 @@ public:
 
 
 #define Bally_Source_Bally_BallyGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ABallyGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABallyGameModeBase(ABallyGameModeBase&&); \
@@ -56,7 +54,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABallyGameModeBase); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABallyGameModeBase); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABallyGameModeBase)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABallyGameModeBase)
 
 
 #define Bally_Source_Bally_BallyGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET

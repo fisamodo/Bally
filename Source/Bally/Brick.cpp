@@ -5,6 +5,8 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/BoxComponent.h"
 #include "Ball.h"
+#include "BallyGameStateBase.h"
+#include"BallyGameModeBase.h"
 // Sets default values
 ABrick::ABrick()
 {
@@ -39,21 +41,29 @@ void ABrick::Tick(float DeltaTime)
 }
 void ABrick::OnOverlapBegin(UPrimitiveComponent * OverlappedComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndexType, bool bFromSweep, const FHitResult & SweepResult)
 {
-	if (OtherActor->ActorHasTag("Ball")) {
-		ABall* MyBall = Cast<ABall>(OtherActor);
+	
+	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr))
+	{
+		if (OtherActor->ActorHasTag("Ball")) {
+			ABall* MyBall = Cast<ABall>(OtherActor);
 
-		FVector BallVelocity = MyBall->GetVelocity();
-		BallVelocity *= (SpeedModifierOnBounce - 1.0f);
+			ABallyGameModeBase* GM = Cast<ABallyGameModeBase>(GetWorld()->GetAuthGameMode());
+			GM->OnHit();
 
-		MyBall->GetBall()->SetPhysicsLinearVelocity(BallVelocity, true);
+			FVector BallVelocity = MyBall->GetVelocity();
+			BallVelocity *= (SpeedModifierOnBounce - 0.9f);
 
-		FTimerHandle UnusedHandle;
-		GetWorldTimerManager().SetTimer(UnusedHandle, this, &ABrick::DestroyBrick, 0.1f, false); //delay for 0.1sec and makes ball bounce back after hitting one brick
+			MyBall->GetBall()->SetPhysicsLinearVelocity(BallVelocity, true);
+
+			FTimerHandle UnusedHandle;
+			GetWorldTimerManager().SetTimer(UnusedHandle, this, &ABrick::DestroyBrick, 0.1f, false); //delay for 0.1sec and makes ball bounce back after hitting one brick
+		}
 	}
 }
 
 void ABrick::DestroyBrick()
 {
+	
 	this->Destroy();
 
 }

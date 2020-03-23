@@ -13,5 +13,10 @@ UCLASS()
 class BALLY_API ABallyGameStateBase : public AGameStateBase
 {
 	GENERATED_BODY()
+public:
+
+	ABallyGameStateBase();
+
+	int32 Points;
 	
 };

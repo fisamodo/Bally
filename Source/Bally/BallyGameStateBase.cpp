@@ -3,3 +3,7 @@
 
 #include "BallyGameStateBase.h"
 
+ABallyGameStateBase::ABallyGameStateBase()
+{
+	Points = 0;
+}

@@ -14,4 +14,13 @@ class BALLY_API ABallyGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+public:
+	ABallyGameModeBase();
+
+	
+
+	UPROPERTY(EditAnywhere, Category="Game Rules")
+	int32 PointsToWin;
+
+	void OnHit();
 };

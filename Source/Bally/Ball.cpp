@@ -5,6 +5,8 @@
 
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Components/BoxComponent.h"
+
 
 // Sets default values
 ABall::ABall()
@@ -43,6 +45,8 @@ void ABall::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
+
+
 
 void ABall::Launch()
 {

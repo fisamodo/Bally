@@ -26,7 +26,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		UBoxComponent* Box_Collision;
 
-	float SpeedModifierOnBounce = 1.01f;
+	float SpeedModifierOnBounce = 1.0f;
 
 	UFUNCTION()
 		void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor,
@@ -34,6 +34,8 @@ protected:
 			const FHitResult& SweepResult);
 
 	void DestroyBrick();
+
+	float SphereRadius;
 
 
 public:	
